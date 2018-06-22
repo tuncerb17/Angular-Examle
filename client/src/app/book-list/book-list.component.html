@@ -3,6 +3,7 @@
   <mat-card-content>
     <mat-list>
       <mat-list-item *ngFor="let book of books">
+        <img mat-list-avatar src="{{book.giphyUrl}}" alt="{{book.name}}">
         <h3 mat-line>{{book.name}}</h3>
       </mat-list-item>
     </mat-list>
